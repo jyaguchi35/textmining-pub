@@ -3,12 +3,10 @@ options(repos="https://cran.ism.ac.jp/")
 options(warn=-1)
 tryCatch(
   { library(rjson) }
-  , error = function(e) { install.packages("rjson"); library(rjson)}
-)
+  , error = function(e) { install.packages("rjson"); library(rjson)})
 tryCatch(
   { library(wordcloud2) }
-  , error = function(e) { install.packages("wordcloud2"); library(wordcloud2)}
-)
+  , error = function(e) { install.packages("wordcloud2"); library(wordcloud2)})
 
 bmL <- NULL
 for (ii in 30:1) {
